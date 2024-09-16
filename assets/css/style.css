@@ -9,7 +9,15 @@
 /* #endregion common */
 
 /* #region universal */
-.nerko_one {
+body {
+    font-family: "Montserrat", 'Helvetica Neue', sans-serif;
+}
+
+main {
+    background-color: #f6f5f3;
+}
+
+.logo {
     font-family: "Nerko One", cursive;
     font-weight: 1000;
     font-size: 1.5rem;
@@ -18,32 +26,108 @@
     text-shadow: 1px 1px grey;
 }
 
-/* #endregion universal */
 
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* #region video section */
+#video_sect {
+    .title_text {
+        h5 {
+            color: gray;
+            font-weight: 200;
+            padding: 1.5rem 0 .5rem;
+        }
+
+        h1 {
+            color: #4e3969;
+            padding-bottom: 2rem;
+        }
+    }
+
+    .video {
+        width: 100%;
+        aspect-ratio: 16/9;
+        border: none;
+    }
+
+    .card {
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 10px 10px 10px rgb(192, 192, 192);
+
+        ul {
+            display: flex;
+            list-style: none;
+            padding-top: 2.5rem;
+            gap: 1rem;
+        }
+    }
+}
+
+/* #endregion video section */
+
+/* #endregion universal */
 
 /* #region media-query max 768px  */
 @media screen and (max-width: 768px) {
 
     /* #region header */
-    .nerko_one {
+    .logo {
         text-align: center;
     }
 
     /* #endregion header */
+
+    /* #region title */
+    .title_text_md_lg {
+        display: none;
+    }
+
+    /* #endregion title */
+
+    /* #region video section */
+    .card {
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    /* #endregion video section */
 }
 
 /* #endregion media-query max-768px  */
 
 /* #region media-query max-992px */
-@media screen and (min-width: 768px) and (max-width: 992) {
+@media screen and (min-width: 768px) {
 
+    /* #region video section */
+    .card {
+        ul {
+            flex-wrap: wrap;
+        }
+    }
+
+    /* #endregion video section */
 }
 
 /* #endregion media-query max-992px */
 
 /* #region media-query min-992px */
 @media screen and (min-width: 992px) {
+    .video_card{
+        display: flex;
 
+        .video{
+            width: 55%;
+        }
+        .card{
+            width: 45%;
+        }
+    }
 }
 
 /* #endregion media-query min-992px */
