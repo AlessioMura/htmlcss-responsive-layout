@@ -11,6 +11,7 @@
 /* #region universal */
 body {
     font-family: "Montserrat", 'Helvetica Neue', sans-serif;
+    max-width: 1440px;
 }
 
 main {
@@ -110,10 +111,35 @@ main {
 
 .adv {
     width: 100%;
+    padding-bottom: 3rem;
 }
 
 /* #endregion social */
 
+/* #region presentation */
+.presentation {
+    h2 {
+        padding-bottom: 1rem;
+    }
+
+    hr {
+        width: 20%;
+        color: #ff9614;
+    }
+
+    .tiramisu_img {
+        width: 400px;
+        padding-top: 2rem;
+        padding-left: 8rem;
+    }
+
+    p {
+        padding: 2rem 0;
+        line-height: 25px;
+    }
+}
+
+/* #endregion presentation */
 
 /* #endregion universal */
 
@@ -176,7 +202,19 @@ main {
     }
 
     /* #endregion social */
+    .presentation {
+        .tiramisu_img {
+            padding-left: 0;
+            padding-right: 1rem;
+            float: left;
+        }
+    }
 }
+
+/* #region presentation */
+
+
+/* #endregion presentation */
 
 /* #endregion media-query max-992px */
 
@@ -212,6 +250,13 @@ main {
     }
 
     /* #endregion social */
+    .presentation {
+        .tiramisu_img {
+            padding-left: 0;
+            padding-right: 1rem;
+            float: left;
+        }
+    }
 }
 
 /* #endregion media-query min-992px */
