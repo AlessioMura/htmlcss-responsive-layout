@@ -70,6 +70,51 @@ main {
 
 /* #endregion video section */
 
+/* #region social */
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+
+    .fa-facebook {
+        color: rgb(0, 60, 255);
+    }
+
+    .fa-twitter {
+        color: rgb(0, 191, 255);
+    }
+
+    .fa-instagram {
+        color: rgb(255, 48, 83);
+    }
+
+    .fa-pinterest,
+    .fa-youtube {
+        color: red;
+    }
+
+    [class*="fa-"] {
+        background-color: white;
+        box-shadow: 10px 10px 10px rgb(192, 192, 192);
+        padding: 10px;
+        border-radius: 2rem;
+    }
+
+    .social_name {
+        display: none;
+    }
+
+
+
+}
+
+.adv {
+    width: 100%;
+}
+
+/* #endregion social */
+
+
 /* #endregion universal */
 
 /* #region media-query max 768px  */
@@ -97,6 +142,15 @@ main {
     }
 
     /* #endregion video section */
+
+    /* #region social */
+    .adv {
+        display: none;
+    }
+
+    /* #endregion social */
+
+
 }
 
 /* #endregion media-query max-768px  */
@@ -112,22 +166,52 @@ main {
     }
 
     /* #endregion video section */
+
+    /* #region social */
+    .social {
+        [class*="fa-"] {
+            padding: .5rem 3rem;
+        }
+
+    }
+
+    /* #endregion social */
 }
 
 /* #endregion media-query max-992px */
 
 /* #region media-query min-992px */
 @media screen and (min-width: 992px) {
-    .video_card{
+
+    /* #region video section */
+    .video_card {
         display: flex;
 
-        .video{
+        .video {
             width: 55%;
         }
-        .card{
+
+        .card {
             width: 45%;
         }
     }
+
+    /* #endregion video section */
+
+    /* #region social */
+    .social {
+        [class*="fa-"] {
+            padding: .7rem 2rem;
+        }
+
+        .social_name {
+            display: inline;
+            font-size: 12px;
+            color: black;
+        }
+    }
+
+    /* #endregion social */
 }
 
 /* #endregion media-query min-992px */
