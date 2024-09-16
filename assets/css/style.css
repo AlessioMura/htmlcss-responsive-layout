@@ -1,0 +1,49 @@
+/* #region common */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion common */
+
+/* #region universal */
+.nerko_one {
+    font-family: "Nerko One", cursive;
+    font-weight: 1000;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #ff9614;
+    text-shadow: 1px 1px grey;
+}
+
+/* #endregion universal */
+
+
+/* #region media-query max 768px  */
+@media screen and (max-width: 768px) {
+
+    /* #region header */
+    .nerko_one {
+        text-align: center;
+    }
+
+    /* #endregion header */
+}
+
+/* #endregion media-query max-768px  */
+
+/* #region media-query max-992px */
+@media screen and (min-width: 768px) and (max-width: 992) {
+
+}
+
+/* #endregion media-query max-992px */
+
+/* #region media-query min-992px */
+@media screen and (min-width: 992px) {
+
+}
+
+/* #endregion media-query min-992px */
