@@ -141,6 +141,36 @@ main {
 
 /* #endregion presentation */
 
+/* #region contacts */
+.contacts {
+    background-color: #7c69a4;
+    color: white;
+    text-align: center;
+
+    .company {
+        padding-top: 2rem;
+    }
+
+    .address {
+        padding: 2rem 0;
+    }
+
+    .info {
+        display: flex;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            color: white;
+        }
+
+
+    }
+}
+
+/* #region contacts */
+
 /* #endregion universal */
 
 /* #region media-query max 768px  */
@@ -176,7 +206,6 @@ main {
 
     /* #endregion social */
 
-
 }
 
 /* #endregion media-query max-768px  */
@@ -202,6 +231,8 @@ main {
     }
 
     /* #endregion social */
+
+    /* #region presentation */
     .presentation {
         .tiramisu_img {
             padding-left: 0;
@@ -209,12 +240,10 @@ main {
             float: left;
         }
     }
+
+    /* #endregion presentation */
+
 }
-
-/* #region presentation */
-
-
-/* #endregion presentation */
 
 /* #endregion media-query max-992px */
 
@@ -250,6 +279,8 @@ main {
     }
 
     /* #endregion social */
+
+    /* #region presentation */
     .presentation {
         .tiramisu_img {
             padding-left: 0;
@@ -257,6 +288,16 @@ main {
             float: left;
         }
     }
+
+    /* #endregion presentation */
+
+    /* #region contacts */
+    .company,
+    .address {
+        text-align: start;
+    }
+
+    /* #endregion contacts */
 }
 
 /* #endregion media-query min-992px */
